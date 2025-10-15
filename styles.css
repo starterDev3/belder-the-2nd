@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
+
 
 .navbar {
     display: flex;
@@ -32,6 +32,7 @@ background-color: #272119;
 background-image: linear-gradient(to top, #585034 0%, #221c15 100%);
 -webkit-background-clip: text;
 -moz-background-clip: text;
+background-clip: text;
 -webkit-text-fill-color: transparent;
 display: flex;
 align-items: center;
@@ -40,9 +41,6 @@ text-decoration: none;
 font-size: 2.25rem;
 }
 
-.fa-gem {
-    margin-right: 0.1rem;
-}
 
 .navbar__menu {
     display: flex;
@@ -88,8 +86,8 @@ font-size: 2.25rem;
 }
 
 .button:hover {
-    background: #856a4b;
-    background-color: #88414100;
+    background: #706150;
+    background-color: #9c767600;
 }
 
 .navbar__links:hover {
@@ -124,16 +122,17 @@ font-size: 2.25rem;
         left: -0%;
         opacity: 0;
         transition: all 0.5s ease;
-        background: #110e0a;
+        background: #000000;
     }
 
     .navbar__menu.active {
-        background: #110e0a;
+        background: #000000;
         left: 0;
-        top: 80px;
+        top: 70px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        bottom: 25px;
     }
 
     .navbar__item {
@@ -190,8 +189,9 @@ padding-bottom: 2rem;
 
 /* Guts Section */
 .main {
-background-color: #cec5bb;
-}
+background-color: #181818;
+padding: 2%;
+}   
 
 .main__container {
 display: grid;
@@ -200,7 +200,7 @@ align-items: center;
 justify-self: center;
 margin: 0 auto;
 height: 90vh;
-background-color: #110e0a;
+background-color: #000000;
 z-index: 1;
 width: 100%;
 max-width: 1300px;
@@ -209,11 +209,141 @@ padding: 0 50px;
 
 .main__content h1 {
 font-size: 4rem;
-background-color: #5a3518;
+background-color: #000000;
 background-image: linear-gradient(to top, #977731 0%, #221c15 100%);
 background-size: 100%;
 -webkit-background-clip: text;
 -moz-background-clip: text;
 -webkit-text-fill-color: transparent;
 -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 1.75rem;
+background-color: #5a3518;
+background-image: linear-gradient(to top, #b9b745 0%, #443c2c 100%);
+background-size: 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.main__btn {
+    font-size: 1.5rem;
+    padding: 10px 70px;
+    background-image: linear-gradient(to top, #b9b745 0%, #443c2c 100%);
+    border-radius: 15px;
+}
+
+.main__btn:after {
+content: '';
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+background: #88414100;
+    background-color: #88414100;
+
+}
+
+.main__btn:hover {
+    background: #856a4b;
+    
+        transition: all 0.3s ease;
+}
+
+.main__btn:hover:after {
+width: 100%;
+}
+
+.main__img--container {
+text-align: center;
+}
+
+#main__img {
+    height: 50%;
+     width: 50%;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 3.45rem;
+    }
+
+    .main__content h1 {
+        font-size: 3rem;
+    }
+
+        .main__content h2 {
+        font-size: 1.55rem;
+    }
+
+    .main__content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 2.25rem;
+    }
+
+        .main__content h2 {
+        font-size: 1.25rem;
+    }
+
+    .main__btn {
+        font-size: 1.25rem;
+        padding: 10px 50px;
+    }
+
+}
+
+.latest__main {
+    background-color: #181818;
+}
+
+.latest__container {
+    background-color: #272119;
+background-image: linear-gradient(to top, #b3a46f 0%, #221c15 100%);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+}
+
+.latest__img {
+    width: 55%;
+}
+
+.latest__img--container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 70px;
+    color: #fff;
 }
