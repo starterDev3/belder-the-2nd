@@ -422,5 +422,20 @@ rgba(0, 0, 0, 0) 100%);
 .BTS__img {
  width: 70%;
 }
+
+    
+}
+@media screen and (max-height: 700px) {
+.grid--scenes {
+    display: grid;
+    grid-template-columns: 260px 260px 260px 260px;
+        grid-template-rows: 120px 120px 120px 120px;
+    gap: 1px;
+    padding: 15px;
+}
+.BTS__img {
+ width: 70%;
+}
+
     
 }
