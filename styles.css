@@ -409,7 +409,7 @@ rgba(0, 0, 0, 0) 100%);
 }
 
 .BTS__img {
- width: 190%;
+ width: 195%;
 }
 
 @media screen and (max-width: 680px) {
@@ -439,4 +439,19 @@ rgba(0, 0, 0, 0) 100%);
 }
 
     
+}
+
+.proj_p {
+    margin: 20px 0;
+
+    color: #fff;
+    line-height: 1.5;
+}
+
+.grid--scenes_2 {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    grid-template-rows: 70px 70px 70px 70px;
+    gap: 330px;
+    padding: 40px;
 }
